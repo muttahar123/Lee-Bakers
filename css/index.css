@@ -1,0 +1,37 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+    overflow: hidden;
+}
+.slideshow-container {
+    position: absolute; /* Ensure it stays behind other content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1; /* Ensure it is behind the navbar */
+    animation: zoomInOut 16s infinite;
+}
+@keyframes zoomInOut {
+    0% {
+        background-size: 100%;
+        transform: scale(1);
+    }
+    50% {
+        background-size: 120%;
+        transform: scale(1.2);
+    }
+    100% {
+        background-size: 100%;
+        transform: scale(1);
+    }
+}
+#user_name {
+color: #f7f7f7; /* Or any contrasting color */
+font-size: 1.5rem;
+margin: 10px 0; /* Increase size for visibility */
+}
