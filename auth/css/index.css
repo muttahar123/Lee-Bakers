@@ -1,0 +1,43 @@
+/* index.css */
+body {
+    background-color: #f3f4f6;
+}
+
+/* Ensure the carousel images cover the full screen */
+.carousel img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Profile menu should be in front of the background image */
+#user-menu-button {
+    position: relative;
+    z-index: 50;
+}
+
+#default-carousel .carousel-item {
+    height: 100vh;
+}
+
+/* Adjust the position of the profile dropdown menu */
+#user-menu-button + div {
+    z-index: 50;
+}
+.ri-heart-3-fill{
+    font-size: 25px;
+}
+.ri-heart-3-fill:hover {
+    color: red;
+}
+.card-image {
+    height: 200px; /* Adjust the height as needed */
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+  }
+  .feedback-message {
+    color: green;
+    font-size: 0.875rem; /* small text */
+    margin-top: 0.5rem; /* spacing above the message */
+  }
+  

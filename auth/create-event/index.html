@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+
+   <div class="container mx-auto px-4 py-16">
+    <h1 class="text-3xl font-bold my-4 text-center">Make New Events</h1>
+    <div class="bg-white shadow-md rounded-lg p-6">
+        <form id="event_form">
+            <!-- Events Image Upload -->
+            <div class="mb-4">
+                <label for="eventImage" class="block text-gray-700 text-sm font-bold mb-2">Event Image</label>
+                <input type="file" id="eventImage" class="w-full px-3 py-2 border rounded-md">
+            </div>
+            <!-- Event Title -->
+            <div class="mb-4">
+                <label for="eventTitle" class="block text-gray-700 text-sm font-bold mb-2">Event Title</label>
+                <input type="text" id="eventTitle" class="w-full px-3 py-2 border rounded-md" value="Bridal Events">
+            </div>
+            <!-- Event Location -->
+            <div class="mb-4">
+                <label for="eventLocation" class="block text-gray-700 text-sm font-bold mb-2">Event Location</label>
+                <input type="text" id="eventLocation" class="w-full px-3 py-2 border rounded-md" value="Karachi">
+            </div>
+            <!-- Event Date -->
+            <div class="mb-4">
+                <label for="eventDate" class="block text-gray-700 text-sm font-bold mb-2">Event Date</label>
+                <input type="date" id="eventDate" class="w-full px-3 py-2 border rounded-md">
+            </div>
+            <!-- Events Time -->
+            <div class="mb-4">
+                <label for="eventTime" class="block text-gray-700 text-sm font-bold mb-2">Event Time</label>
+                <input type="time" id="eventTime" class="w-full px-3 py-2 border rounded-md">
+            </div>
+            <div class="mb-4">
+                <label for="eventDescription" class="block text-gray-700 text-sm font-bold mb-2">Event Description</label>
+                <textarea id="eventDescription" class="w-full px-3 py-2 border rounded md:text-base text-sm">We Are Happy Family</textarea>
+            </div>
+            <div class="mb-4 text-center">
+                <button type="submit" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Make Events</button>
+            </div>
+        </form>
+    </div>
+</div>
+      <script src="app.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+</body>
+</html>

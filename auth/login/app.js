@@ -1,7 +1,7 @@
 import {
     auth,
     signInWithEmailAndPassword, 
-} from '../../utils/utils.js';
+} from '../utils/utils.js';
 
 const loginForm = document.getElementById('login_form');
 
@@ -15,7 +15,8 @@ loginForm.addEventListener('submit', function (e){
     signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
         console.log(userCredential);
-        window.location.href = '../index.html';
+        console.log("login hpo gaya");
+        window.location.href= '../index.html';
         }).catch((error) =>{
             console.log(error);
         });
